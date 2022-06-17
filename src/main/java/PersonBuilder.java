@@ -34,7 +34,7 @@ public class PersonBuilder {
     }
 
     public Person build() {
-        if (name != null || surname != null) {
+        if (name != null && surname != null) {
             //if (!name.isBlank() || !surname.isBlank()) {
             // ??? почему при таком варианте не выбрасывается нужное исключение???
             return new Person(name, surname, age, address);
